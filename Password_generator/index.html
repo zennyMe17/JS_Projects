@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,11 +20,10 @@
         <div class="display-container">
             
             <input type="text" readonly placeholder="Password" class="display" data-passwordDisplay>
-            <button data-copy>
-                <span dta-copyMsg>Copied</span>
+            <button class="copyBtn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
                 <img src="./assets/copy.svg" alt="copy" width="23" height="23">
             </button>
-            
         </div>
 
         <div class="input-container">
@@ -34,25 +39,27 @@
 
             <!-- checkbox -->
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
-                <label for="uppercase">Include Uppercase Letter</label>
+                <label for="uppercase">Includes Uppercase Letter</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
-                <label for="lowercase">Include Lowercase Letter</label>
+                <label for="lowercase">Includes Lowercase Letter</label>
             </div>
+            <div class="check">
                 <input type="checkbox" id="numbers">
-                <label for="number">Include Number Letter</label>
-            <div>
+                <label for="number">Includes Number Letter</label>
+            </div>
+            <div class="check">
                 <input type="checkbox" id="symbols">
-                <label for="symbol">Include Symbol Letter</label>
+                <label for="symbol">Includes Symbol Letter</label>
             </div>
 
             <div class="strength-container">
 
                 <p>Strength</p>
-                <div data-indicator></div>
+                <div class="inidcator" data-indicator></div>
 
             </div>
 
